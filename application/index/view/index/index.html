@@ -91,7 +91,7 @@
             <figcaption>
                 <h2>top{$k}</h2>
                 <p>balabalatop{$k}<br>
-                    <a href="{$vo.url}" title="{$k}" data-gallery>View more</a></p>
+                    <a href="{$vo.url}" data-gallery>View more</a></p>
             </figcaption>
         </figure>
     {/volist}
@@ -207,7 +207,7 @@ Copyright 2018 石头版权所有
         var scrollTop = $(this).scrollTop();
         var scrollHeight = $(document).height();
         var windowHeight = $(this).height();
-        if(scrollTop + windowHeight == scrollHeight){
+        if(scrollTop + windowHeight == scrollHeight ){
             $.ajax({
                 url:"{:url('index/index/getMoreImgs')}",
                 dataType:'JSON',
@@ -239,5 +239,9 @@ Copyright 2018 石头版权所有
             })
         }
     });
+
+    function get_img(url){
+        window.open(url);
+    };
 </script>
 </html>
