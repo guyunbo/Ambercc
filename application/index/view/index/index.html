@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Amber CC</title>
+    <!-- load css -->
+<link href='__ROOT__/load.css' rel='stylesheet' type='text/css'>
+
+    <!-- Google fonts -->
+<link href='__ROOT__/assets/goole_css.css' rel='stylesheet' type='text/css'>
+
+<!-- font awesome -->
+<link href="__ROOT__/assets/font-awesome.css" rel="stylesheet">
+
+<!-- bootstrap -->
+<link rel="stylesheet" href="__ROOT__/assets/bootstrap/css/bootstrap.min.css" />
+
+<!-- animate.css -->
+<link rel="stylesheet" href="__ROOT__/assets/animate/animate.css" />
+<link rel="stylesheet" href="__ROOT__/assets/animate/set.css" />
+
+<!-- gallery -->
+<link rel="stylesheet" href="__ROOT__/assets/gallery/blueimp-gallery.min.css">
+
+<!-- favicon -->
+<link rel="shortcut icon" href="__ROOT__/images/icon.ico" type="image/x-icon">
+<link rel="icon" href="__ROOT__/images/icon.ico" type="image/x-icon">
+
+
+<link rel="stylesheet" href="__ROOT__/assets/style.css">
+
+</head>
+
+<body onload="hide_load()">
+<div class="topbar animated fadeInLeftBig"></div>
+
+<!-- Header Starts -->
+<div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="top-nav">
+          <div class="container">
+            <div class="navbar-header">
+              <!-- Logo Starts -->
+              <a class="navbar-brand" href="#home"><img src="http://mobparkcn-files.oss-cn-hangzhou.aliyuncs.com/gm-mp/ambercc/imgs/2017-09-28/log-1.png" alt="logo"></a>
+              <!-- #Logo Ends -->
+
+
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+            </div>
+
+            <!-- Nav Starts -->
+            <div class="navbar-collapse  collapse">
+              <ul class="nav navbar-nav navbar-right scroll">
+                 <li class="active"><a href="#works">Home</a></li>
+                 <!--<li ><a href="#">Nav1</a></li>
+                 <li ><a href="#">Nav2</a></li>
+                 <li ><a href="#">Nav3</a></li>-->
+              </ul>
+            </div>
+            <!-- #Nav Ends -->
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+<!-- #Header Starts -->
+
+
+
+
+<!-- works -->
+<div id="works"  class=" clearfix grid">
+
+    {volist name="img_res" id="vo" key="k" }
+        {if condition="$k eq 1"}
+            <figure class="effect-oscar  wowload fadeIn" style="height: 280px">
+            {else}
+            <figure class="effect-oscar  wowload fadeInUp" style="height: 280px">
+        {/if}
+            <img src="{$vo.url}" alt="img{$k}"/>
+            <figcaption>
+                <h2>top{$k}</h2>
+                <p>balabalatop{$k}<br>
+                    <a href="{$vo.url}" title="{$k}" data-gallery>View more</a></p>
+            </figcaption>
+        </figure>
+    {/volist}
+</div>
+<!-- works -->
+
+
+<!-- Cirlce Starts -->
+
+<!-- #Cirlce Ends -->
+
+<div class="copyrights">Collect from </div>
+
+<!-- About Starts -->
+<div class="highlight-info">
+<div class="overlay spacer">
+<div class="container">
+<div class="row text-center  wowload fadeInDownBig">
+  <div class="col-sm-3 col-xs-6">
+  <i class="fa fa-smile-o  fa-5x"></i><h4>N Clients</h4>
+  </div>
+  <div class="col-sm-3 col-xs-6">
+  <i class="fa fa-rocket  fa-5x"></i><h4>N Projects</h4>
+  </div>
+  <div class="col-sm-3 col-xs-6">
+  <i class="fa fa-cloud-download  fa-5x"></i><h4>N Downloads</h4>
+  </div>
+  <div class="col-sm-3 col-xs-6">
+  <i class="fa fa-map-marker fa-5x"></i><h4>N Offices</h4>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<!-- About Ends -->
+
+
+
+
+
+
+
+
+
+<!--Contact Starts-->
+
+<!--Contact Ends-->
+
+
+
+<!-- Footer Starts -->
+<div class="footer text-center spacer">
+<p class="wowload flipInX"><a href="#"><i class="fa fa-facebook fa-2x"></i></a> <a href="#"><i class="fa fa-instagram fa-2x"></i></a> <a href="#"><i class="fa fa-twitter fa-2x"></i></a> <a href="#"><i class="fa fa-flickr fa-2x"></i></a> </p>
+Copyright 2018 石头版权所有
+</div>
+<!-- # Footer Ends -->
+<a href="#works" class="gototop "><i class="fa fa-angle-up  fa-3x"></i></a>
+
+
+
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title">Title</h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->    
+</div>
+
+
+<!-- load -->
+<div id="preloader">
+    <div id="loader"></div>
+</div>
+<!-- end load -->
+
+
+
+
+
+
+<!-- jquery -->
+<script src="__ROOT__/assets/jquery.js"></script>
+
+<!-- wow script -->
+<script src="__ROOT__/assets/wow/wow.min.js"></script>
+
+
+<!-- boostrap -->
+<script src="__ROOT__/assets/bootstrap/js/bootstrap.js" type="text/javascript" ></script>
+
+<!-- jquery mobile -->
+<script src="__ROOT__/assets/mobile/touchSwipe.min.js"></script>
+<script src="__ROOT__/assets/respond/respond.js"></script>
+
+<!-- gallery -->
+<script src="__ROOT__/assets/gallery/jquery.blueimp-gallery.min.js"></script>
+
+<!-- custom script -->
+<script src="__ROOT__/assets/script.js"></script>
+
+</body>
+<script>
+    function hide_load() {
+        $("#preloader").fadeOut('slow');
+    }
+    var page=1;
+    //判断滚动条位置，如果到底开始加载数据
+    $(window).scroll(function(){
+        var scrollTop = $(this).scrollTop();
+        var scrollHeight = $(document).height();
+        var windowHeight = $(this).height();
+        if(scrollTop + windowHeight == scrollHeight){
+            $.ajax({
+                url:"{:url('index/index/getMoreImgs')}",
+                dataType:'JSON',
+                type:'POST',
+                data:{
+                    'page':page
+                },
+                beforeSend: function () {
+
+                },
+                success: function (data) {
+                    console.log(data);
+                    if(data.state==1){
+                        page+=1;
+                        var arr = data.result;
+                        for(var i=0;i<arr.length;i++){
+                            var len = $("#works").children().length+1;
+                            $("#works").append("<figure class='effect-oscar  wowload fadeInUp' style='height: 280px'>"
+                                +"<img src='"+arr[i].url+"' alt='img"+len+"'/>"
+                                +" <figcaption>"
+                                +"<h2>Top"+len+"</h2>"
+                                +"<p>balabalatop"+len+"<br>"
+                                +" <a href='"+arr[i].url+"' title='"+len+"' data-gallery>View more</a></p></figcaption></figure>");
+
+                        }
+                    }
+
+                }
+            })
+        }
+    });
+</script>
+</html>
