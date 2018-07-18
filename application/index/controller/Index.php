@@ -3,8 +3,9 @@
 namespace app\index\controller;
 
 use app\index\model\Imgs;
+use think\Controller;
 
-class Index extends Base
+class Index extends Basic
 {
     protected $imgObj;
     protected $reimg;
