@@ -9,5 +9,8 @@ class Login extends Controller
     {
         return $this->fetch();
     }
-
+    public function register()
+    {
+        return $this->fetch();
+    }
 }
