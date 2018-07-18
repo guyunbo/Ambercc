@@ -83,11 +83,11 @@
 
     {volist name="img_res" id="vo" key="k" }
         {if condition="$k eq 1"}
-            <figure class="effect-oscar  wowload fadeIn" style="height: 280px">
+            <figure class="effect-oscar  wowload fadeIn" style="height: 380px">
             {else}
-            <figure class="effect-oscar  wowload fadeInUp" style="height: 280px">
+            <figure class="effect-oscar  wowload fadeInUp" style="height: 380px">
         {/if}
-            <img src="{$vo.url}" alt="img{$k}"/>
+            <img src="{$vo.cake}" alt="img{$k}"/>
             <figcaption>
                 <h2>top{$k}</h2>
                 <p>balabalatop{$k}<br>
@@ -225,8 +225,8 @@ Copyright 2018 石头版权所有
                         var arr = data.result;
                         for(var i=0;i<arr.length;i++){
                             var len = $("#works").children().length+1;
-                            $("#works").append("<figure class='effect-oscar  wowload fadeInUp' style='height: 280px'>"
-                                +"<img src='"+arr[i].url+"' alt='img"+len+"'/>"
+                            $("#works").append("<figure class='effect-oscar  wowload fadeInUp' style='height: 380px'>"
+                                +"<img src='"+arr[i].cake+"' alt='img"+len+"'/>"
                                 +" <figcaption>"
                                 +"<h2>Top"+len+"</h2>"
                                 +"<p>balabalatop"+len+"<br>"
