@@ -17,7 +17,7 @@ class Basic extends Controller
 
     public function checkLogin()
     {
-        if (Session::has('username', 'global')) {
+        if (Session::has('abc_username', 'global')) {
             return true;
         } else {
             return false;

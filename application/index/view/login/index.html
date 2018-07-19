@@ -1,35 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
 
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Ambercc Login</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ambercc Login</title>
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
-        <link rel="stylesheet" href="__ROOT__/registration/assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="__ROOT__/registration/assets/font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" href="__ROOT__/registration/assets/css/form-elements.css">
-        <link rel="stylesheet" href="__ROOT__/registration/assets/css/style.css">
+	<!-- CSS -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+	<link rel="stylesheet" href="__ROOT__/registration/assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="__ROOT__/registration/assets/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="__ROOT__/registration/assets/css/form-elements.css">
+	<link rel="stylesheet" href="__ROOT__/registration/assets/css/style.css">
 
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
 
-        <!-- Favicon and touch icons -->
-		<link rel="shortcut icon" href="__ROOT__/images/icon.ico" type="image/x-icon">
-		<link rel="icon" href="__ROOT__/images/icon.ico" type="image/x-icon">
-    </head>
+	<!-- Favicon and touch icons -->
+	<link rel="shortcut icon" href="__ROOT__/images/icon.ico" type="image/x-icon">
+	<link rel="icon" href="__ROOT__/images/icon.ico" type="image/x-icon">
+	<style type="text/css">
+		html, body {
+			height: 100%;
+			margin:0;
+			padding:0;
+		}
+		.back_img_div{
+			background: url(http://mobparkcn-files.oss-cn-hangzhou.aliyuncs.com/gm-mp/ambercc/imgs/2017-09-28/lab.jpg) center fixed;
+			background-size: cover;
+			position: relative;
+			height: 100%;
+			width:100%;
+			margin: 0;
+			left: 0px;
+			padding: 0;
+		}
+		.frosted-glass{
+			z-index: 0;
+			background: inherit;
+			overflow:hidden;
+			filter: blur(20px);
+		}
+	</style>
+</head>
 
-    <body>
-
-		<!-- Top menu -->
+<body>
+<!-- Top menu -->
+<div class="back_img_div"><!-- 背景图div  -->
+	<div style="height: 100%;width: 1200px;height: 400px;position: absolute;top: calc((100% - 550px)/2);left:calc(50% - 600px);margin:0 auto;" class="frosted-glass">
+		<!--遮罩层-->
+	</div>
+	<div style="display: inline-block">
 		<nav class="navbar navbar-inverse navbar-no-bg" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
@@ -47,15 +74,14 @@
 						<li>
 							<span class="li-text">
 								也许在不久的将来
-							</span> 
-
+							</span>
 							<span class="li-text">
-								你还可能通过他们登录:
-							</span> 
+								(大概)你还可能通过他们登录:
+							</span>
 							<span class="li-social">
-								<a href="#"><i class="fa fa-facebook"></i></a> 
-								<a href="#"><i class="fa fa-twitter"></i></a> 
-								<a href="#"><i class="fa fa-envelope"></i></a> 
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-envelope"></i></a>
 								<a href="#"><i class="fa fa-skype"></i></a>
 							</span>
 						</li>
@@ -63,66 +89,73 @@
 				</div>
 			</div>
 		</nav>
+		<!-- Top content -->
+		<div class="top-content">
+			<div class="inner-bg">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-7 text">
+							<h1><strong>Ambercc</strong> 登录</h1>
+							<div class="description">
+								<p>
+									是你！老司机！发色图，社保！
+								</p>
+								<p>
+									还在等什么!老司机！开车！
+								</p>
+							</div>
+							<div class="top-big-link">
+								<a class="btn btn-link-1" href="{:url('index/login/register')}">注册</a>
+								<a class="btn btn-link-2" href="#">登录</a>
+							</div>
+						</div>
+						<div class="col-sm-5 form-box">
+							<div class="form-top">
+								<div class="form-top-left">
+									<h3>登录</h3>
+									<p>请系好安全带:</p>
+								</div>
+								<div class="form-top-right">
+									<i class="fa fa-pencil"></i>
+								</div>
+							</div>
+							<div class="form-bottom">
+								<form role="form" action="" method="post" class="registration-form">
+									<div class="form-group">
+										<label class="sr-only" for="form-first-name">用户名</label>
+										<input type="text" name="form-first-name" placeholder="用户名..." class="form-first-name form-control" id="form-first-name">
+									</div>
+									<div class="form-group">
+										<label class="sr-only" for="form-last-name">密码</label>
+										<input type="text" name="form-last-name" placeholder="密码..." class="form-last-name form-control" id="form-last-name">
+									</div>
+									<button type="submit" class="btn">发车</button>
+									<button type="button" onclick="go_index()" style="margin-left: 10px" class="btn">试车</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-        <!-- Top content -->
-        <div class="top-content">
-        	
-            <div class="inner-bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-7 text">
-                            <h1><strong>Ambercc</strong> 登录</h1>
-                            <div class="description">
-                            	<p>
-	                            	发色图！社保！还在等什么!老司机！开车！
-                            	</p>
-                            </div>
-                            <div class="top-big-link">
-                            	<a class="btn btn-link-1" href="{:url('index/login/register')}">注册</a>
-                            	<a class="btn btn-link-2" href="#">登录</a>
-                            </div>
-                        </div>
-                        <div class="col-sm-5 form-box">
-                        	<div class="form-top">
-                        		<div class="form-top-left">
-                        			<h3>登录</h3>
-                            		<p>秋名山见，发车:</p>
-                        		</div>
-                        		<div class="form-top-right">
-                        			<i class="fa fa-pencil"></i>
-                        		</div>
-                            </div>
-                            <div class="form-bottom">
-			                    <form role="form" action="" method="post" class="registration-form">
-			                    	<div class="form-group">
-			                    		<label class="sr-only" for="form-first-name">用户名</label>
-			                        	<input type="text" name="form-first-name" placeholder="用户名..." class="form-first-name form-control" id="form-first-name">
-			                        </div>
-			                        <div class="form-group">
-			                        	<label class="sr-only" for="form-last-name">密码</label>
-			                        	<input type="text" name="form-last-name" placeholder="密码..." class="form-last-name form-control" id="form-last-name">
-			                        </div>
-			                        <button type="submit" class="btn">发车!</button>
-			                    </form>
-		                    </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- Javascript -->
+<script src="__ROOT__/registration/assets/js/jquery-1.11.1.min.js"></script>
+<script src="__ROOT__/registration/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="__ROOT__/registration/assets/js/jquery.backstretch.min.js"></script>
+<script src="__ROOT__/registration/assets/js/retina-1.1.0.min.js"></script>
+<script src="__ROOT__/registration/assets/js/scripts.js"></script>
 
-
-        <!-- Javascript -->
-        <script src="__ROOT__/registration/assets/js/jquery-1.11.1.min.js"></script>
-        <script src="__ROOT__/registration/assets/bootstrap/js/bootstrap.min.js"></script>
-        <script src="__ROOT__/registration/assets/js/jquery.backstretch.min.js"></script>
-        <script src="__ROOT__/registration/assets/js/retina-1.1.0.min.js"></script>
-        <script src="__ROOT__/registration/assets/js/scripts.js"></script>
-        
-        <!--[if lt IE 10]>
-        <script src="__ROOT__/registration/assets/js/placeholder.js"></script>
-        <![endif]-->
-
-    </body>
+<!--[if lt IE 10]>
+<script src="__ROOT__/registration/assets/js/placeholder.js"></script>
+<![endif]-->
+<script>
+	function go_index() {
+		window.location.href="{:url('index/login/t_login')}";
+    }
+</script>
+</body>
 
 </html>

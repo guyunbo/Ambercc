@@ -4,15 +4,15 @@ jQuery(document).ready(function() {
     /*
         Fullscreen background
     */
-    $.backstretch("http://mobparkcn-files.oss-cn-hangzhou.aliyuncs.com/gm-mp/ambercc/imgs/2017-09-28/lab.jpg");
-    
+   /* $.backstretch("http://mobparkcn-files.oss-cn-hangzhou.aliyuncs.com/gm-mp/ambercc/imgs/2017-09-28/lab.jpg");
+
     $('#top-navbar-1').on('shown.bs.collapse', function(){
     	$.backstretch("resize");
     });
     $('#top-navbar-1').on('hidden.bs.collapse', function(){
     	$.backstretch("resize");
     });
-    
+*/
     /*
         Form validation
     */
